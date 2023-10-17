@@ -37,7 +37,8 @@ gallery:any[]=[
   {source:'../../assets/home/galery_img3.jfif'},
   {source:'../../assets/home/gallery_img4.webp'},
   {source:'../../assets/home/galery_img5.webp'},
-  {source:'../../assets/home/galery_img6.webp'}
+  {source:'../../assets/home/galery_img6.webp'},
+  
 ]
 
 icon:any[]=[
