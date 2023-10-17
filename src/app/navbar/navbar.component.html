@@ -1,0 +1,37 @@
+<div class="navbar">
+  <!-- Navbar Logo -->
+    <div class="logo">
+      <i class="fas fa-star-half"></i>
+      <h3>HOTEL <span [ngStyle]="color1()">STAY</span>INN</h3>
+    </div>
+<!-- Navbar Links -->
+    <ul class="links">
+      <li routerLinkActive="active" *ngFor="let item of navigationItems">
+        <a [routerLink]="item.link" skipLocationChange="true">
+          <span>{{ item.text }}</span>
+        </a>
+      </li>
+    </ul>
+
+    <a routerLink="/contact" class="action_btn" skipLocationChange="true">Contact Us</a>
+
+    <!-- toggle button -->
+    <div class="toggle_btn" (click)="onclick()"  >  
+      <i [ngClass]="{'fa fa-bars':!isDropdownOpen,'fa-solid fa-xmark': isDropdownOpen}"></i>
+    </div>
+
+  </div>
+
+<!-- Drop down button  -->
+  <div class="drop_down" [ngClass]="{'open':isDropdownOpen}">
+
+    <li routerLinkActive="active" *ngFor="let item of navigationItems">
+      <a [routerLink]="item.link" skipLocationChange="true">
+        <span>{{ item.text }}</span>
+      </a>
+    </li>
+    
+  </div>
+
+
+  <router-outlet></router-outlet>

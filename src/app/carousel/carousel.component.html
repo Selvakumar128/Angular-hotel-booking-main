@@ -1,0 +1,10 @@
+<p-carousel [value]="images" [numVisible]="itemsPerSlide" [circular]="true" [autoplayInterval]="interval" [showIndicators]="false">
+
+    <ng-template let-image pTemplate="item">
+
+      <img [src]="image.source" [alt]="image.alt" />
+      
+    </ng-template>
+
+</p-carousel>
+

@@ -1,0 +1,74 @@
+input.ng-invalid.ng-touched{
+    border:1px solid red ;
+}
+
+.hidden{
+    display: none;
+}
+
+.img{
+  background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: blur(3px); 
+  width: 3504px;
+  height: 711px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+
+.container {
+    width: 350px; 
+    padding-top: 30px;
+    margin: 90px auto; 
+    border: 2px solid rgb(63, 77, 75);
+    background: #cccaca;
+  
+  
+  
+}
+
+input {
+  border-radius: 12px ;
+  padding: 10px;
+  margin: 8px;
+  margin-left: 10px;
+}
+select{
+  border-radius: 12px ;
+  padding: 2px 14px 5px 29px;
+  margin: 10px;
+}
+textarea{
+  margin: 6px;
+    border-radius: 12px;
+    padding: 11px 142px 16px 10px;
+}
+label{
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.help-text {
+  color: red;
+  margin-left: 26px;
+}
+h3{
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.btn{
+  margin-left: 55px;
+
+}
+td{
+  color: black;
+}

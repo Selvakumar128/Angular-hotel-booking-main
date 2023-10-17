@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playball&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2 ,h3,h4,h5,h6,span,p, li ,a{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  li a {
+    color: #000;
+  }
+
+   li {
+    list-style: none;
+    margin-top: 5px;
+    align-items: center;
+  }
+
+   a {
+    text-decoration: none;
+    color:#000;
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+
+  header {
+    position: relative;
+    padding: 0 1rem;
+  }
+
+
+ .carousel{
+  padding: 0 16px;
+ }
+
+  .sider {
+    display:flex;
+    margin-top:56px;
+  }
+
+  .book {
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 70px;
+    flex-direction: column;
+  }
+
+  .book h1 {
+    margin-top: 20px;
+    margin-top: 2px;
+    margin-left: 25px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+
+
+  .sider a {
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0;
+    color: #fff;
+  }
+
+  .sider a:hover{
+    background-color:  #589442;
+    text-decoration: none;
+    color: #fff;
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .sider   img {
+    padding: 0 16px;
+    margin-top: 17px;
+    border-radius: 175px 20px 175px 10px;
+    width: 50%;
+  }
+
+  .sider .book h4 {
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  .sider .book a {
+    border-radius: 5px;
+    background-color: #589442;
+    margin-right: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 170px;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    border: none;
+  }
+
+  .sider .book a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00a8b6; 
+    transition: left 0.3s ease; 
+    z-index: -1; 
+  }
+  .sider .book a:hover::before {
+    left: 0;
+  }
+
+  .sider .info {
+    margin-top: 30px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 38px
+  }
+
+
+  /* Banner */
+  .banner {
+    margin-top: 25px;
+    padding: 3px 30px;
+    height: 70px;
+    align-items: center;
+    background-color: #8bb37d69;
+    border-bottom: 3px solid #00a27973;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+
+  .banner li {
+    align-items: center;
+    display: inline;
+    margin-top: 10px;
+    margin-left: 40px;
+    color:#000;
+    font-size: 19px;
+  }
+
+  .banner li a {
+    border-radius: 5px;
+    background-color: #589442;
+    margin-right: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    border: none;
+    margin-top: 8px;
+  }
+
+  .banner li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color:#00a8b6; 
+    transition: left 0.3s ease; 
+    z-index: -1; 
+    
+  }
+  .banner li a:hover::before {
+    left: 0;
+  }
+
+
+ /* Details */
+  .reviews {
+    margin-top: 70px;
+    display: flex;
+    padding: 0 10px;
+    margin-left: -6px;
+  }
+
+  .reviews .para1 {
+    display: inline-block;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 0.95em;
+    column-gap: 3px;
+    border: 1px solid #dfdfdf;
+    padding: 20px 16px;
+    background-color: #8bb37d69;
+  }
+
+  .reviews .para1 h2 {
+    text-align: center;
+  }
+
+  .reviews .para1 i {
+    font-size:70px;
+    color: #589442;
+    margin-left: 40%;
+  }
+
+
+  h2{
+    font-size: 26px;
+    font-weight: bold;
+  }
+  /* card */
+  .guest  {
+    text-align: center;
+    color:#000;
+    margin-top: 50px;
+    margin-bottom: 38px;
+  }
+
+  .multi-cards {
+    display: flex;
+    gap: 50px;
+    padding: -4px 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .multi-cards .card img {
+    width:100%;
+    height:243px;
+    padding: 0 0 20px 0;
+    object-fit: cover;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    height: 530px;
+    object-fit: cover;
+    padding: 0 0px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(113, 133, 116, 0.466);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+
+
+
+
+  /* Media Queries */
+  @media (max-width: 600px) {
+    .navbar .links,
+    .navbar .action_btn {
+      display: none;
+    }
+    h1{
+      font-size: 32px;
+    }
+    .book{
+      margin-left: 0px;
+    }
+    .navbar .toggle_btn {
+      display: block;
+    }
+
+    .drop_down {
+      display: block;
+    }
+
+    .sider {
+      display: block;
+    }
+
+    .sider img {
+      width: 95%;
+      border-radius: 84px 32px 84px 32px;
+      margin-left: 10px;
+    }
+
+    .banner {
+      height: auto;
+      
+    }
+
+    .banner li {
+      display: block;
+      margin-left: -10px;
+      margin-right: 4px;
+      font-size: 17px;
+    }
+
+    .banner li a {
+      margin-right: 40px;
+      margin-left: 25%;
+    }
+
+    .card{
+      width:100%
+    }
+    .para1{
+      margin: 9px;
+      width: 307px;
+    }
+    img{
+      object-fit: cover;
+    }
+
+    .reviews,.multi-cards {
+      display: block;
+      margin-left: 10px;  
+    }
+
+    .contact .foot {
+      display: block;
+      align-items: center;
+      margin-left: 50px;
+    }
+    .contact .foot .c1{
+      width: 90%;
+    }
+
+  }
+   @media screen and (min-width: 601px) and (max-width: 992px) {
+      .book h1{
+        font-size: 40px;
+        margin-top: -45px;
+      }
+      .sider {
+        background-color: #ffffff;
+        /* display: block; */
+      }
+      .banner {
+        font-size: 18px;
+        width: auto;
+        height: auto;
+        
+      }
+      .banner li{
+        margin-left: 10px;
+      }
+      .banner li a{
+        margin-left: 220px;
+      }
+      .sider img {
+        width: 48%;
+        margin-top: 16px;
+        height: 417px;
+        border-radius: 133px 21px 122px 21px;
+        margin-left: 10px;
+      }
+      .card img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .card{
+        width: 100%;
+      height: 45%;
+      padding: 0 0 20px 0;
+      object-fit: cover;
+      }
+      .book{
+        padding: 10px;
+        margin-left:-37px;
+      }
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
+      .reviews {
+        display: flex;
+        justify-content: space-between;
+      }
+      .para1 {
+        width: 30%;
+      }
+      .para1 h2 {
+        font-size: 24px;
+      }
+    }
+    
+   
+    @media screen and (min-width: 1441px) {
+      .sider {
+        padding: 20px;
+      }
+      .banner li {
+        font-size: 24px;
+      }
+    }

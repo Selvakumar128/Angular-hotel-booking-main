@@ -1,0 +1,51 @@
+<div class="form-display">
+
+    <select [(ngModel)]="selectedGender" class="filter-button">
+        <option value="all" (click)="onGenderFilterChange('all')">All</option>
+        <option value="Male" (click)="onGenderFilterChange('Male')">Male</option>
+        <option value="Female" (click)="onGenderFilterChange('Female')">Female</option>
+      </select>
+
+    <p-table [value]="formData" [tableStyle]="{ 'max-width': '100%' }">
+        <ng-template pTemplate="header">
+           
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Mobile Number</th>
+                <th>Requirements</th>
+                <th>From Date</th>
+                <th>To Date</th>
+                <th>Gender</th>
+            </tr>
+
+        </ng-template>
+        <ng-template pTemplate="body" let-formValue let-i="rowIndex" >
+             
+            <tr *ngIf="selectedGender === 'all' || formValue.gender === selectedGender">
+                <td>{{ i+1 }}</td>
+                <td>{{ formValue.user |nameCapital  }}</td>
+                <td>{{ formValue.email|lowercase }}</td>
+                <td>{{ formValue.password | passwordMask }}</td>
+                <td>{{ formValue.mobno}}</td>
+                <td>
+                    <ul>
+                        <li *ngFor="let req of formValue.requirements">
+                            {{ req.name }}
+                        </li>
+                    </ul>
+                </td>
+                <td>{{ formValue.fromDate| date: 'dd/MM/yyyy' }}</td>
+                <td>{{ formValue.toDate| date: 'dd/MM/yyyy '}}</td>
+                <td>{{ formValue.gender}}</td>
+            </tr>
+            
+        </ng-template>
+    </p-table>
+
+    <div *ngIf="!checkSelectedGender()">
+        <p style="text-align: center;font-weight: bold; margin: 20px; color: red;">Error: No matching...  Results not found.</p>
+    </div>
+</div>

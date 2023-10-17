@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  h1, h2 ,h3,h4,h5,h6,span,p, li ,a{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+  .color1{
+    color: #589442;
+  }
+  
+  li a {
+    color: #000;
+    
+  }
+
+  li {
+    list-style: none;
+    margin-top: 5px;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color:#000;
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+
+
+  .div li {
+    gap: 50px;
+    list-style-type: none;
+   
+    margin-top: 29px;
+    padding: 0px 28px
+  }
+
+   img {
+    border-radius: 30px 50px 30px 50px ;
+  }
+
+   img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .div .left {
+    display: block;
+  }
+
+   img {
+    width: 65%;
+    margin-top: 82px;
+    height: 65%;
+    margin-left: 10px;
+    margin-bottom: -32px;
+  }
+  
+  p {
+    width: 89%;
+  }
+
+  .div .left a {
+    font-weight: 600;
+    color: #589442;
+  }
+
+  .div .left a:hover {
+    color: #000;
+    transition: .4s ease;
+  }
+
+  .div {
+    display: flex;
+    width: 100%;
+    padding: 0 38px;
+    margin-top: 70px
+  }
+
+  .div1 {
+    width: 47%;
+    margin-bottom: 50px;
+  }
+ 
+  .div2 {
+    list-style-type: none;
+    margin-top: -3%;
+    margin-left: -50px;
+    width: 85%;
+  }
+
+  h3 {
+    margin-top: 30px;
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  /* Media Queries */
+
+  @media (max-width: 800px){
+    .div ,.div1 ,.div2, p{
+      display: block;
+      width: 109%;
+      margin-bottom: 15px;
+      margin-left: -11px;
+    }
+    img{
+      width: 330px;
+      height: 215px;
+    }
+
+    .contact .foot {
+      display: block;
+      align-items: center;
+      margin-left: 30%;
+    }
+
+    
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+      }
+
+      .navbar .toggle_btn {
+        display: block;
+      }
+
+      .drop_down {
+        display: block;
+      }
+
+  }

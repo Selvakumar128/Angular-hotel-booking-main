@@ -1,0 +1,98 @@
+
+  .img{
+    background-image:url("https://thumbs.dreamstime.com/b/hotel-reservation-form-silver-vintage-bell-reception-desk-copy-space-service-registration-selective-focus-184094834.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: blur(3px);
+    width: 1920px;
+    height: 960px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    object-fit: contain;
+  }
+
+  .form{
+    padding: 101px 16px 10px 42px;
+    
+  }
+
+  .form-input{
+    margin-top: 10px;
+  }
+
+
+  input.ng-invalid.ng-touched{
+    border:1px solid red;
+  }
+
+
+  h1{
+    font-size: 23px;
+    margin-left: 34px;   
+  }
+
+  .form {
+    width: 350px; 
+    padding-top: 30px;
+    margin: 90px auto; 
+    border: 2px solid rgb(96, 245, 232);
+    background: #cccaca;
+  }
+  
+
+  .form-input {
+    margin-bottom: 25px;
+    border-radius: 12px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-left: -6px;
+  }
+
+  input[type="radio"]{
+    margin-left: 5px;
+    padding: 5px 36px 3px 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"]{
+    width: 85%;
+    margin-left: 5px;
+    padding: 5px 36px 3px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+ 
+  button {
+    display: block; 
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-bottom: 10px;
+  }
+  
+  
+  input[type="radio"] + label {
+    margin-left: 5px;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3%;
+  }
+
+  li{
+    list-style: none;
+  }

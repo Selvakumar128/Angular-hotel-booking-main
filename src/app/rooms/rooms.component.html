@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rooms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../Styles/rooms.css"> -->
+</head>
+
+<body>
+    <app-navbar></app-navbar>
+    <!-- <h1>HOTEL <span class="color1">STAY</span>INN </h1> -->
+    <img src="../../assets/rooms/rooms.jpg" alt="HOTEL STAY INN"><br>
+    <div class="div">
+        
+        <div class="left">
+           
+            <p>Welcome to hotel StayInn cbe</p>
+            <a routerLink="/reservation" skipLocationChange="true">Book your rooms now..!</a> <br><br>
+            <p>Hotel Grand Palace is centrally located in Coimbatore city. Few minutes walk from the central bus station, Gandhipuram 2kms from Railway station and just 9 Kms from the Coimbatore Airport. Exquisite & Elegantly furnished AC, Single, Double and Trible beded Delux rooms are available.</p>
+    
+        <div class="div1">
+            <h3>Standard (Non A/C)</h3>
+            <ul>
+                <li>Single Occupancy Rs. 1300.00 +TAX</li>
+                <li>Double Occupancy Rs. 1600.00 +TAX</li>
+                <li>Trible Occupancy Rs. 2000.00 +TAX</li>  
+                <h3>Extra Person Rs. 300.00 +taxes</h3>          
+            </ul>
+        
+            <h3>Air conditioned (A/C)</h3>
+            <ul>
+                <li>Single Occupancy Rs. 1800.00 +TAX</li>
+                <li>Double Occupancy Rs. 2100.00 +TAX</li>
+                <li>Trible Occupancy Rs. 2500.00 +TAX</li>
+                <h3>Extra Person Rs. 350.00 +taxes</h3>
+            </ul>
+
+        <div class="term">
+            <h3>TERMS :</h3>
+            <ul>
+                <li>*&nbsp; Rates with effective from 01 th SEPTEMBER 2022.</li>
+                <li>*&nbsp; Taxes as applicable shall be extra.</li>
+                <li>*&nbsp; Tariff and Taxes are subject to change without notice.</li>
+                <li>*&nbsp; Check-in & Check-out 24 hours.</li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
+
+
+    <div class="div2">
+        <h2>FACILITIES :</h2>
+        <ul>
+            <li>*&emsp;24 hours hot water</li>
+            <li>*&emsp;Ample car parking</li>
+            <li>*&emsp;Travel desk and Laundry</li>
+            <li>*&emsp;24 hours room service</li>
+            <li>*&emsp;Leading satellite channels</li>
+            <li>*&emsp;Free wifi ready</li>
+            <li>*&emsp;Reasonably priced</li>
+            <li>*&emsp;A 24-hour front desk</li>
+            <li>*&emsp;Daily housekeeping</li>
+            <li>*&emsp;Private bathroom</li>
+        </ul>
+    </div>
+
+
+</div>
+
+
+<!-- <script>
+
+    const toggle_btn=document.querySelector('.toggle_btn')
+    const toggle_btn1=document.querySelector('.toggle_btn i')
+    const dropDown =document.querySelector('.drop_down')
+
+    toggle_btn.onclick=function(){
+        dropDown.classList.toggle('open')
+        const isOpen=dropDown.classList.contains("open")
+        toggle_btn1.classList=isOpen
+        ?'fa-solid fa-xmark':'fa-solid fa-bars'
+    }
+
+</script> -->
+<app-footer-component></app-footer-component>
+</body>
+
+
+</html>

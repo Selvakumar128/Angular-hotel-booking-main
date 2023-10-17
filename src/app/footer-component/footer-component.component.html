@@ -1,0 +1,54 @@
+<div class="contact">
+    <h3>HOTEL <span [ngStyle]="color1()">STAY</span> INN</h3>
+    <div class="foot">
+
+    <div class="c1">
+      <i class='fas fa-map-marker-alt'></i>
+      <p>Cross cut road, 11th street, Gandhipuram,</p>
+      <p>Coimbatore 641012. Tamil Nadu, India.</p>
+
+        <ul>
+          <i class='fas fa-phone'></i>         
+          <p [ngStyle]="color1()">&emsp; <a href="/reservation">Book now</a></p>
+          <p [ngStyle]="color1()">&nbsp;9786534201</p>
+       
+        </ul>
+
+        <div *ngFor="let value of icon" class="icons">
+          <i [class]="value.name"></i>
+        </div>
+    <div class="copy">
+        <br>
+        <p>&copy;2023 copyrights</p>
+    </div>
+
+</div>
+
+
+<div class="c2">
+    <h4 >Coimbatore Attractions</h4><br>
+
+    <div *ngFor="let card of tourism" class="card1">
+      <img [src]="card.source" >
+      <div class="container1">
+        <p>{{card.place}}</p>
+        <p [ngStyle]="color1()">{{card.location}}</p>
+      </div>
+    </div>
+</div>
+
+
+<div class="c3">
+    <h4>Stay Inn Gallery</h4><br>
+    <div class="grid-container">
+
+      <div *ngFor="let image of gallery" class="img">
+        <img [src]="image.source" alt="Hotel StayInn Cbe">
+      </div>
+      
+    </div>
+</div>
+
+</div>
+</div>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    
+    <!-- <hr class="hr"> -->
+    <app-navbar></app-navbar>
+    <div class="sider">
+      <img src="../../assets/home/home_page.jpg" alt="HOTEL STAY INN" />
+      <div class="book">
+        <h1 >Welcome to <span [ngStyle]="color1()" style="margin-left: 147px">C</span>oimbatore<span [ngStyle]="color1()">!</span></h1>
+        <h4>Manchester of south india</h4><br/><br/>
+        <a routerLink="/reservation" skipLocationChange="true"> FOR BOOKINGS</a>
+        <div class="info">
+          <p>Exquisite & Elegantly furnished Single, Double and Trible bededn Delux rooms | 24 hours running hot water| Ample car parking | Free WiFi | Modern facilities and amenities
+          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Banner -->
+    <div class="banner">
+      <li>
+        Centrally located with connectivity, of Railway station and CoimbatoreAirport.
+      </li>
+      <li><a routerLink="/rooms" skipLocationChange="true">Rooms & Tarrif</a></li>
+    </div>
+
+
+
+    <!-- Details -->
+    <div class="reviews">
+      <div *ngFor="let about of reviews" class="para1">
+        <i [class]="about.icons"></i> <br><br>
+        <h2>{{about.heading}}</h2><br>
+        <p>{{about.detail}}</p>
+      </div>
+     
+    </div>
+
+     
+    <!-- Carousel -->
+    <h1 class="guest">HOTEL <span [ngStyle]="color1()">STAY</span>INN CBE<span [ngStyle]="color1()">!</span></h1>
+
+    <app-carousel></app-carousel>
+
+    <!-- cards -->
+    <h1 class="guest">VIP GUESTS OF <span [ngStyle]="color1()">STAY</span>INN</h1>
+    <div class="multi-cards">
+      <div *ngFor="let image of card" class="card">
+        <img [src]="image.source" >
+        <div class="container">
+            <h4><b>{{image.name}}</b></h4>
+            <p>{{image.details}}</p>
+        </div>
+      </div>
+    </div>
+
+  
+    <app-footer-component></app-footer-component>
+
+  </body>
+
+</html>

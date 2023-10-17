@@ -1,0 +1,36 @@
+
+.p-multiselect-label-container{
+    width: 200px;
+    height: 30px;
+  }
+
+  .p-multiselect .p-multiselect-label{
+    padding: 2px 10px;
+  }
+  
+  .p-multiselect{
+    border-radius: 10px;
+  }
+
+.p-inputtext.p-component.ng-star-inserted {
+    border-radius: 10px;
+    width: 250px;
+    height: 33px;
+}
+
+input.p-inputtext.p-component.p-element.p-password-input {
+  border-radius: 10px;
+  width: 250px;
+  height: 33px;
+}
+input#withoutgrouping {
+  border-radius: 10px;
+  width: 250px;
+  height: 33px;
+}
+
+
+.mt-2 {
+  margin-bottom: 29px;
+  margin-left: 30px;
+}

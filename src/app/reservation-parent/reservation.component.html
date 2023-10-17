@@ -1,0 +1,73 @@
+<app-navbar></app-navbar>
+<div class="img"></div>
+<div class="form">
+    <h1>Reservation Form</h1>
+    <form [formGroup]="reservationForm" (ngSubmit)="submitReservation()">
+            <div class="form-input">
+                <label>Name :</label>
+                <input type="text" placeholder="Enter name " formControlName="user">
+                <br>
+                <span style="color: red;" *ngIf="reservationForm.get('user')?.invalid && reservationForm.get('user')?.touched">Name is invalid...Enter a valid name</span>
+            </div>
+
+            <div class="form-input">
+                <label>Email :</label>
+                <input type="email" placeholder="Enter Email" formControlName="email">
+                <br>
+                <span style="color: red;" *ngIf="reservationForm.get('email') && reservationForm.get('email')?.invalid && reservationForm.get('email')?.touched">Email is invalid...Enter a valid email</span>
+            </div>
+
+            <div class="form-input">
+                <label>Password :</label> 
+                <p-password placeholder="Enter Password" formControlName="password" [toggleMask]="true"></p-password>
+                <span style="color: red;" *ngIf="reservationForm.get('password') && reservationForm.get('password')?.invalid && reservationForm.get('password')?.touched">Password invalid...Enter valid password</span>
+            </div>
+          
+              
+            <div class="form-input">
+                <label >Mobile Number</label>
+                <p-inputNumber formControlName="mobno"  inputId="withoutgrouping" [useGrouping]="false"></p-inputNumber>
+                <span style="color: red;" *ngIf="reservationForm.get('mobno') && reservationForm.get('mobno')?.invalid && reservationForm.get('mobno')?.touched">Mobile Number is required</span>
+            </div>
+            
+            <div class="form-input">
+                <label>Requirements :</label>
+                <p-multiSelect [options]="splReq"  formControlName="requirements" optionLabel="name"></p-multiSelect>
+            </div>
+    
+            <div class="form-input">
+                <label>From Date :</label>
+                <p-calendar formControlName="fromDate"></p-calendar>
+            </div>
+
+            <div class="form-input">
+                <label>To Date :</label>
+                <p-calendar formControlName="toDate"></p-calendar>
+            </div>
+
+            <div class="form-input">
+                <label class="radio" >Gender :</label>
+                <input type="radio" name="gender" value="Male" class="gender" formControlName="gender"><label>Male</label>
+                <input type="radio" name="gender" value="Female" class="gender" formControlName="gender"><label>Female</label>
+            </div>
+
+            <div class="form-input" style="display: inline-block;">
+                <p-checkbox formControlName="city" value="New York" inputId="ny"></p-checkbox>
+                <p class="11" for="ny" style="margin-left: 25px;margin-top: -23px;">Remember Me !</p>
+            </div>
+            
+            <br><br>
+            <span style="color: red; font-size: 20px;margin-left: 15%;" *ngIf="formSubmitted && reservationForm.invalid">
+                Please fill all the fields....
+              </span>
+            <button pButton pRipple label="Submit" class="p-button-success"  (click)="submitReservation()"></button>
+            
+            
+    </form>
+</div>
+
+
+<app-child-table [formData]="reservations"></app-child-table>
+<div *ngIf="duplicateError" class="error-message" style="color: red;font-weight: bold;">
+    This reservation already exists.
+  </div>

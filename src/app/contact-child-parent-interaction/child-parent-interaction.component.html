@@ -1,0 +1,55 @@
+<div class="img"></div>
+<div class="container" >
+    <div class="row">
+        <h3>Contact Form </h3>
+        <div class="col-md-12">
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+    <div class="form-group">
+      <label for="username">User Name:</label>
+      <input type="text" class="form-control" id="username" name="username" [(ngModel)]="formData.username" required pattern="[a-zA-Z]*">
+    </div>
+    <div class="form-group">
+      <label for="email">Email :</label>
+      <input type="text" class="form-control" id="email" name="email" [(ngModel)]="formData.email" required >
+      <span class="help-text" *ngIf="!formData.email.valid && formData.email.touched">Please  enter a valid email...</span>
+  </div>
+
+  <div class="form-group">
+      <label >Gender : </label>
+      <div class="form-controll" >
+        <label class="radio-inline">
+          <input type="radio" name="gender" value="male" [(ngModel)]="formData.gender" required>Male</label>&nbsp;
+        <label class="radio-inline">
+          <input type="radio" name="gender" value="female" [(ngModel)]="formData.gender" required>Female</label>
+      </div>
+    </div>
+
+  <div class="form-group">
+      <label for="country">Country : </label>
+      <select class="form-control" name="country" id="country" [ngModel]="formData.country">
+          <option>India</option>
+          <option>China</option>
+          <option>America</option>
+          <option>London</option>
+          <option>Australia</option>
+      </select> 
+  </div>
+
+  <div class="form-group">
+      <label >Comments...  </label><br>
+      <textarea name="description" id="description" cols="" rows="3" [(ngModel)]="formData.description" required>Description</textarea>
+  </div>
+
+  
+  <div class="mt-2">
+    <div class="help-text" *ngIf="!f.valid&&f.touched">Please fill the all fields</div>
+      <button type="submit" class="btn btn-primary"[disabled]="!f.valid">Send Message</button>
+  
+  </div>
+
+  </form>
+  </div>
+  </div>
+  </div>
+
+  
