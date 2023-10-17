@@ -54,17 +54,17 @@ reservations: any[]=[
   city: ['New York'],
   requirements: [{name: 'Extra Bed'},{name: 'Food'}]
 },
-// {
-//   user: 'anu',
-//   email: 'anu@example.com',
-//   password: 'anu@123#4',
-//   mobno: '7373249090',
-//   fromDate: '2023-10-01',
-//   toDate: '2023-10-10',
-//   gender: 'Female',
-//   city: ['New York'],
-//   requirements: [{name: 'Extra Bed'},{name: 'Food'}]
-// },
+{
+  user: 'anu',
+  email: 'anu@example.com',
+  password: 'anu@123#4',
+  mobno: '7373249090',
+  fromDate: '2023-10-01',
+  toDate: '2023-10-10',
+  gender: 'Female',
+  city: ['New York'],
+  requirements: [{name: 'Extra Bed'},{name: 'Food'}]
+},
 {
   user: 'naveen',
   email: 'naveen@gmail.com',
