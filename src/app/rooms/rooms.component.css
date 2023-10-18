@@ -111,6 +111,10 @@
     font-size: 19px;
     font-weight: bold;
   }
+  .term ul li {
+    margin-bottom: 31px;
+    margin-left: 26px;
+}
 
   /* Media Queries */
 
