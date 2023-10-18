@@ -18,7 +18,8 @@
                     <img [src]="image.source" >
                     <div class="intro">
                         <h1><span [ngClass]="addColor()">{{image.heading}}</span></h1>
-                        <p><a routerLink="/reservation" skipLocationChange="true">{{image.link}}</a></p>
+                        <p><a [routerLink]="['/details', image.id]" skipLocationChange="true">{{image.link}}</a></p>
+
                     </div>
             </div>
         </div>

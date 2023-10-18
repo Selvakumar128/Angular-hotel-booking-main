@@ -7,7 +7,7 @@
 <!-- Navbar Links -->
     <ul class="links">
       <li routerLinkActive="active" *ngFor="let item of navigationItems">
-        <a [routerLink]="item.link" skipLocationChange="true">
+        <a [routerLink]="item.link"  skipLocationChange="false" >
           <span>{{ item.text }}</span>
         </a>
       </li>
@@ -26,7 +26,7 @@
   <div class="drop_down" [ngClass]="{'open':isDropdownOpen}">
 
     <li routerLinkActive="active" *ngFor="let item of navigationItems">
-      <a [routerLink]="item.link" skipLocationChange="true">
+      <a [routerLink]="item.link" skipLocationChange="false">
         <span>{{ item.text }}</span>
       </a>
     </li>

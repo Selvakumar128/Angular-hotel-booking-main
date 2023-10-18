@@ -11,7 +11,7 @@ const routes: Routes = [
   {path:'',component:HomePageComponent},
   {path:'home',component:HomePageComponent},
   {path:'gallery',component:GalleryPageComponent},
-  {path:'gallery/details/:id',component:DetailsComponent},
+  {path:'details/:id',component:DetailsComponent},
   {path:'rooms',component:RoomsComponent},
   {path:'reservation',component:ReservationComponent},
   {path:'contact',component:ContactParentComponent}
