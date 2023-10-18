@@ -89,8 +89,7 @@ reservations: any[]=[
     console.log(this.reservations)
     this.reservationForm.reset();
     }else{
-      // this.duplicateError=true;
-      console.log("******fd")
+      
       window.alert('This reservation already exists.');
     }
   }
