@@ -1,0 +1,41 @@
+
+<!-- <div class="img_details">
+    <div *ngFor="let image of imagesCard1">
+        <a [routerLink]="['/details', image.id]">
+            <img [src]="image.source" width="50%" height="50%" >
+        </a>
+        <h3>{{image.heading}}</h3>
+        <h4>{{image.link}}</h4>
+        <h5>{{image.price}}</h5>
+
+    </div>
+    
+</div> -->
+
+
+<div class="img_details">
+    <div *ngIf="selectedImage">
+      <p-card>
+        <ng-template pTemplate="header">
+          <img [src]="selectedImage.source" alt="{{selectedImage.heading}}">
+        </ng-template>
+        <ng-template pTemplate="content">
+          <h3>{{selectedImage.heading}}</h3>
+          <h6 style="color: red;font-weight: bold;">Limited Rooms only Available.</h6>
+          <p><a routerLink="/reservation" skipLocationChange="true">{{selectedImage.link}}</a></p>
+          <h5>Price :{{selectedImage.price}}</h5>
+        
+          <p>{{img}}</p>
+          <p>{{detail}}</p>
+        </ng-template>
+      </p-card>
+    </div>
+    <div *ngIf="!selectedImage">
+      <p-card>
+        <ng-template pTemplate="content">
+          <p>Image not found</p>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
+  

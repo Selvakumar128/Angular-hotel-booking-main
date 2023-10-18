@@ -34,3 +34,8 @@ input#withoutgrouping {
   margin-bottom: 29px;
   margin-left: 30px;
 }
+
+.p-card.p-component {
+  margin: 80px;
+  background: #e3f3e9;
+}

@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
        // Primeng plugins
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardModule } from 'primeng/card';
 import { CarouselModule } from 'primeng/carousel';
 import { CalendarModule } from 'primeng/calendar';
 import { CheckboxModule } from 'primeng/checkbox';
@@ -30,6 +31,8 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { PasswordModule } from 'primeng/password';
 import { TableModule } from 'primeng/table';
+import { DetailsComponent } from './gallery-page/details/details.component';
+
 
 
 
@@ -50,6 +53,8 @@ import { TableModule } from 'primeng/table';
     RoomsComponent,
     ChildParentInteractionComponent,
     ContactParentComponent,
+    DetailsComponent,
+ 
   ],
 
   imports: [
@@ -58,6 +63,7 @@ import { TableModule } from 'primeng/table';
     ButtonModule,
     BrowserAnimationsModule,
     CarouselModule,
+    CardModule,
     CalendarModule,
     CheckboxModule,
     DropdownModule,
