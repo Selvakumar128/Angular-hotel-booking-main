@@ -54,7 +54,6 @@ import { DetailsComponent } from './gallery-page/details/details.component';
     ChildParentInteractionComponent,
     ContactParentComponent,
     DetailsComponent,
- 
   ],
 
   imports: [
