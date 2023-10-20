@@ -36,6 +36,6 @@ input#withoutgrouping {
 }
 
 .p-card.p-component {
-  margin: 80px;
+  margin: 100px 80px 30px 80px;
   background: #e3f3e9;
 }
