@@ -16,5 +16,4 @@ const routes: Routes = [
   {path:'reservation',component:ReservationComponent},
   {path:'contact',component:ContactParentComponent}
 ];
-
 export const AppRoutingModule=RouterModule.forRoot(routes)
