@@ -25,7 +25,6 @@ imagesCard1:any[]=[
   {id:110,source:'../../assets/home/gallery_img4.webp',heading:'Hotel Stay Inn',link:'Book now'},
   {id:111,source:'../../assets/home/galery_img5.webp',heading:'Hotel Stay Inn',link:'Book now'},
   {id:112,source:'../../assets/home/galery_img6.webp',heading:'Hotel Stay Inn',link:'Book now'}
-  
 ]
 
 }

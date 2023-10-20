@@ -16,23 +16,14 @@
     <div class="cont1">
                 <div *ngFor="let image of imagesCard1" class="card">
                     <img [src]="image.source" >
+
                     <div class="intro">
                         <h1><span [ngClass]="addColor()">{{image.heading}}</span></h1>
                         <p><a [routerLink]="['/details', image.id]" skipLocationChange="true">{{image.link}}</a></p>
-
                     </div>
             </div>
         </div>
         
-    <!-- <div class="container2">
-                <div *ngFor="let image of imagesCard1" class="card">
-                    <img [src]="image.source" >
-                    <div class="intro">
-                        <h1><span [ngClass]="addColor()">{{image.heading}}</span></h1>
-                        <p><a routerLink="/reservation" skipLocationChange="true">{{image.link}}</a></p>
-                    </div>
-                </div>
-    </div> -->
     </div>
 
 
@@ -40,70 +31,3 @@
     
 
 
-            <!-- <div class="cont1">
-            <div class="card">
-                <img src="../../assets/gallery/g10.jpg" alt="">
-                 <div class="intro">
-                    <h1><span [ngClass]="addColor()">Hotel Stay Inn</span> </h1>
-                    <p><a routerLink="/reservation" skipLocationChange="true">Book now</a></p>
-                 </div>
-            </div>
-    
-        <div class="card">
-            <img src="../../assets/gallery/g2.jpg" alt="">
-            <div class="intro">
-                <h1><span [ngClass]="addColor()">Hotel Stay Inn</span> </h1>
-                <p><a routerLink="/reservation" skipLocationChange="true">Book now</a></p>
-            </div>
-    </div>  
-    
-    <div class="card">
-        <img src="../../assets/gallery/g6.jpg" alt="">
-        <div class="intro">
-            <h1><span [ngClass]="addColor()">Hotel Stay Inn</span> </h1>
-            <p><a routerLink="/reservation" skipLocationChange="true">Book now</a></p>
-        </div>
-    </div>
-
-    <div class="card">
-                <img src="../../assets/gallery/g4.jpg" alt="">
-                <div class="intro">
-                    <h1><span [ngClass]="addColor()">Hotel Stay Inn</span> </h1>
-                    <p><a routerLink="/reservation" skipLocationChange="true">Book now</a></p>
-                </div>
-    </div>
-    </div> -->
-<!-- 
-    <div class="container2">
-        <div class="card">
-            <img src="../../assets/gallery/g3.jpg" alt="">
-            <div class="intro">
-                <h1><span [ngClass]="addColor()">Hotel Stay Inn</span> </h1>
-                <p><a routerLink="/reservation" skipLocationChange="true">Book now</a></p>
-            </div>
-        </div>
-    
-        <div class="card">
-            <img src="../../assets/gallery/g5.jpg" alt="">
-            <div class="intro">
-                <h1><span [ngClass]="addColor()">Hotel Stay Inn</span> </h1>
-                <p><a routerLink="/reservation" skipLocationChange="true">Book now</a></p>
-            </div>
-    </div>  
-    
-    <div class="card">
-        <img src="../../assets/gallery/g1.jfif" alt="">
-        <div class="intro">
-                <h1><span [ngClass]="addColor()">Hotel Stay Inn</span> </h1>
-                <p><a routerLink="/reservation" skipLocationChange="true">book now</a></p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../../assets/gallery/g7.jfif" alt="">
-        <div class="intro">
-                <h1><span [ngClass]="addColor()">Hotel Stay Inn</span> </h1>
-                <p><a routerLink="/reservation" skipLocationChange="true">Book now</a></p>
-        </div>
-    </div>
-    </div> -->

@@ -78,8 +78,6 @@ reservations: any[]=[
 }
 ];
 
-
-
   submitReservation() {
     this.formSubmitted = true;
   if (this.reservationForm.valid) {
