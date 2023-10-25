@@ -13,11 +13,12 @@ addColor(){
   )
 }
 
+
 imagesCard1:any[]=[]
 constructor(private galleryService:GalleryService){}
+
 
 ngOnInit(){
   this.imagesCard1=this.galleryService.getImages()
 }
-
 }
