@@ -11,6 +11,7 @@ const routes: Routes = [
   {path:'',component:HomePageComponent},
   {path:'home',component:HomePageComponent},
   {path:'gallery',component:GalleryPageComponent},
+  // {path:'gallery',loadChildren: () => import('./gallery-page/gallery-page.component').then(m => m.GalleryPageComponent)},
   {path:'details/:id',component:DetailsComponent},
   {path:'rooms',component:RoomsComponent},
   {path:'reservation',component:ReservationComponent},

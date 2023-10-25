@@ -12,18 +12,15 @@
     <app-navbar></app-navbar>
 
     <div class="display">
-
-    <div class="cont1">
-                <div *ngFor="let image of imagesCard1" class="card">
-                    <img [src]="image.source" >
-
-                    <div class="intro">
-                        <h1><span [ngClass]="addColor()">{{image.heading}}</span></h1>
-                        <p><a [routerLink]="['/details', image.id]" skipLocationChange="true">{{image.link}}</a></p>
-                    </div>
+        <div class="cont1">
+            <div *ngFor="let image of imagesCard1" class="card">
+                <img [src]="image.source" >
+                <div class="intro">
+                    <h1><span [ngClass]="addColor()">{{image.heading}}</span></h1>
+                    <p><a [routerLink]="['/details', image.id]" skipLocationChange="true">{{image.link}}</a></p>
+                </div>
             </div>
         </div>
-        
     </div>
 
 

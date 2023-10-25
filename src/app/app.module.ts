@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
-// import { ContactComponent } from './contact/contact.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ChildTableComponent } from './resrevation-child-table/child-table.component';
 import { ChildParentInteractionComponent } from './contact-child-parent-interaction/child-parent-interaction.component';
