@@ -32,7 +32,7 @@
   }
   img{
       height: 500px;
-      width: 232px;
+      /* width: 232px; */
       border-radius: 5px;
       transition: .5s;
       object-fit: cover;
@@ -55,7 +55,7 @@
   }
   .cont1 .intro{
       height: 70px;
-      width: 232px;
+      width: 260px;
       padding:6px;
       box-sizing: border-box;
       position: absolute;
