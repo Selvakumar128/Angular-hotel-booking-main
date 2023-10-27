@@ -7,6 +7,7 @@ import { ReservationComponent } from './reservation-parent/reservation.component
 import { ContactParentComponent } from './contact-parent-table/contact-parent.component';
 import { DetailsComponent } from './gallery-page/details/details.component';
 
+
 const routes: Routes = [
   {path:'',component:HomePageComponent},
   {path:'home',component:HomePageComponent},
@@ -17,4 +18,4 @@ const routes: Routes = [
   {path:'reservation',component:ReservationComponent},
   {path:'contact',component:ContactParentComponent}
 ];
-export const AppRoutingModule=RouterModule.forRoot(routes)
+export const AppRoutingModule=RouterModule.forRoot(routes, { scrollPositionRestoration: 'top'})
