@@ -10,6 +10,7 @@
   
   .p-multiselect{
     border-radius: 10px;
+    width: 250px;
   }
 
 .p-inputtext.p-component.ng-star-inserted {

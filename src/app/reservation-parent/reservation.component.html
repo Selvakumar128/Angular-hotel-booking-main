@@ -71,3 +71,8 @@
 <div *ngIf="duplicateError" class="error-message" style="color: red;font-weight: bold;">
     This reservation already exists.
   </div>
+
+  <div class="form-input">
+    <label>Requirements :</label>
+    <p-multiSelect [options]="splReq"  formControlName="requirements" optionLabel="name"></p-multiSelect>
+</div>
